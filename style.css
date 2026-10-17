@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;         
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 5.2vw;
+}
+.logo {
+  width: 196px;
+  height: 54px;
+}
+
+header ul {
+  display: flex;
+  gap: 3.125vw;
+  list-style: none;
+}
+header li {
+  font-size: 17px;
+  font-weight: 700;
+}
+.menu {
+  width: 50%;
+}
+@media (max-width: 1350px) {
+  .menu {
+    width: auto;
+  }
+}
+.background {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.subtitle {
+  display: flex;
+  background-color: #F3FFE9;
+  padding: 14px 46px 14px 16px;
+  width: max-content;
+  gap: 15px;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #58B83E ;
+}
+.subtitle span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #58B83E;
+}
+.title {
+  font-size: 4vw;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 8vh;
+}
+.title span {
+ color: #42A934;
+}
+main {
+  position: fixed;
+  z-index: 2;
+  top: 19.53vh;
+  padding: 0 5.2vw;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  gap: 20px;
+
+}
+
+.right img {
+  width: 43vw;
+}
+.work {
+  gap: 30px;
+  display: flex;
+  
+}
+.work span {
+  padding: 13px;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.work span:nth-child(1) {
+  background-color: #F0602B;
+}
+.work span:nth-child(2) {
+  background-color: #2479D0;
+}
+.work span:nth-child(3) {
+  background-color: #FFD53C;
+  color: #324438;
+}
+.figma {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#menu {
+  display: none;    
+}
+#close {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ display: none;
+}
+@media(max-width: 768px) {
+  #menu {
+    display: block;
+  }
+}
+@media(max-width: 768px) {
+  section  {
+    flex-direction: column;
+  }
+  .menu {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+     transition: all 0.5s linear;
+  }
+  .menu.active{
+    transform: translateX(0%);
+   
+  }
+  #close {
+    display: block;
+  }
+  header ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+}

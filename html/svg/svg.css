@@ -1,0 +1,8 @@
+.pip { animation: colors 4s infinite;}
+
+@keyframes colors {
+    0% {fill: green;}
+    25%{fill: coral;}
+    50%{fill: red;}
+    100%{fill:rgb(65, 192, 11);}
+    }
