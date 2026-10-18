@@ -67,8 +67,8 @@ border-bottom: 100px solid green;
     height: 70vh;
 }
 .sun {
-    width: 150px;
-    height: 150px;
+    width: 12vw;
+    height: 12vw;
     border-radius: 50%;
     background-color: yellow;
 }
@@ -106,3 +106,8 @@ border-bottom: 100px solid red;
     background-color: brown;
     align-self: flex-end;
 }
+@media(max-width: 768px) {
+    .tree2 {
+        display: none;
+    }
+} 
