@@ -1,56 +1,86 @@
 body {
     background: rgb(4, 4, 93);
+    
 }
 .bone {
-          fill: none;
-          stroke: #f9f5df;
-          stroke-width: 15;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-        }
-        .thin {
-          stroke-width: 8;
-        }
-        .left-arm {
-          transform-origin: 195px 220px;
-          animation: armLeft 2.6s ease-in-out infinite alternate;
-        }
-        .right-arm {
-            stroke: green;
-          transform-origin: 305px 220px;
-          animation: armRight 1.6s ease-in-out infinite alternate;
-        }
-        .left-leg {
-          transform-origin: 224px 365px;
-          animation: legLeft 0.7s ease-in-out infinite alternate;
-          animation-delay: 0.7s;
-        }
-        .right-leg {
-          transform-origin: 276px 365px;
-          animation: legRight 0.7s ease-in-out infinite alternate;
-          
-        }
-        .dancer {
-          animation: bounce 0.6s ease-in-out infinite alternate;
-        }
-        @keyframes armRight {
-            from{transform: rotate(0deg);}
-            to{transform: rotate(-60deg);}
-        }
-        @keyframes armLeft {
-            from{transform: rotate(-30deg);}
-            to{transform: rotate(30deg);}
-        }
-        @keyframes bounce {
-            from{transform: translateY(0px);}
-            to{transform: translateY(30px);}
+  fill: none;
+  stroke: #f9f5df;
+  stroke-width: 15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+}
+.thin {
+  stroke-width: 8;
+}
+.left-arm {
+  transform-origin: 195px 220px;
+  animation: armLeft 2.6s ease-in-out infinite alternate;
+}
+.right-arm {
+    stroke: green;
+  transform-origin: 305px 220px;
+  animation: armRight 1.6s ease-in-out infinite alternate;
+}
+.left-leg {
+  transform-origin: 224px 365px;
+  animation: legLeft 0.7s ease-in-out infinite alternate;
+  animation-delay: 0.7s;
+}
+.right-leg {
+  transform-origin: 276px 365px;
+  animation: legRight 0.7s ease-in-out infinite alternate;
+  
+}
+.dancer {
+  animation: bounce 0.6s ease-in-out infinite alternate;
+}
 
-        }
-        @keyframes legLeft {
-            from{transform: rotate(0deg);}
-            to{transform: rotate(30deg);}
-        }
-        @keyframes legRight {
-            from{transform: rotate(0deg);}
-            to{transform: rotate(-30deg);}
-        }
+@keyframes armRight {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-60deg);}
+}
+@keyframes armLeft {
+    from{transform: rotate(-30deg);}
+    to{transform: rotate(30deg);}
+}
+@keyframes bounce {
+    from{transform: translateY(0px);}
+    to{transform: translateY(30px);}
+
+}
+@keyframes legLeft {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(30deg);}
+}
+@keyframes legRight {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-30deg);}
+}
+p {
+  color: wheat;
+}
+@media (max-width: 768px) {
+  /* .dancer {
+    align-items: center;
+  justify-content: center;
+  } */
+    div {
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center
+}
+  /* body {
+    display: flex;
+flex-direction: column;
+  } */
+   svg {
+    width: 80%;
+    height: auto;
+   }
+}
+ p {
+  text-align: center;
+}
